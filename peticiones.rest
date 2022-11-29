@@ -1,0 +1,52 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/Autdoor
+
+###
+GET http://localhost:3000/api/products/min/100
+
+###
+GET http://localhost:3000/api/products/min/30/max/200
+
+###
+GET http://localhost:3000/api/products/stock/20
+
+### 
+GET http://localhost:3000/api/products/6384c14b9df264fd7d013248
+
+###
+GET http://localhost:3000/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+    "name": "Daniel",
+    "email": "aristaoeste4@gmail.com",
+    "address": "Chaparral 4",
+    "age": 46,
+    "active": true
+}
+
+###
+PUT http://localhost:3000/api/clients/6385ef44fa1b3227c15e47cc
+Content-Type: application/json
+
+{
+    "age": 35,
+    "active": false
+}
+
+###
+DELETE http://localhost:3000/api/clients/6385ef44fa1b3227c15e47cc
+
+###
+GET http://localhost:3000/api/clients/6385f8314713fa0a80f4c45d/product/6384acab9df264fd7d013246
+
+###
+GET https://9dbb-64-226-186-222.eu.ngrok.io
